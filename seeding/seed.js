@@ -1,6 +1,6 @@
 import seedModel from ('../models/productModel.js');
 import db from ('../connection/connection.js');
-import seedData from ('../seeding/data/data.json');
+import seedData from ('../seeding/data/data.json') assert { type: json };
 
 
 const seedDatabase = async () => {

@@ -1,0 +1,10 @@
+{
+  "name": "Vormir",
+  "image": "",
+  "category": "fictional",
+  "warrenty": "100",
+  "price": "100,000",
+  "description": "this is a planet",
+  "galaxy": "kag system",
+  "onSale": true
+}
