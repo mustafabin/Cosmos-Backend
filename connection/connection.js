@@ -7,8 +7,9 @@ let mongooseConfig = {
   useUnifiedTopology: true
 }
 
+let connectionString = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/Cosmos";
 
-mongoose.connect("mongodb://127.0.0.1:27017/Cosmos", mongooseConfig)
+mongoose.connect(connectionString, mongooseConfig)
 
 const db = mongoose.connection;
 
