@@ -1,33 +1,34 @@
-import model from '../models/productModel.js';
+import ProductModel from '../models/productModel.js';
+//import UserModel from '../models/productModel.js';
 
 
-let controller = {
+export const productController = {
   create(request, response) {
-    model
+    ProductModel
       .create(request.body)
       .then(data => response.json(data))
   },
   //define get route
   get(request, response) {
-    model
+    ProductModel
       .find({})
       .then(data => response.json(data))
 
   },
   //define delete route
   delete(request, response) {
-    model
+    ProductModel
       .deleteOne(request.params.id)
   },
 
   update(request, response) {
-    model
+    ProductModel
       .findOneAndUpdate(request.params.id, request.body)
       .then(data => response.json(data))
 
   },
-  getIncidentById(request, response) {
-    model
+  getProductById(request, response) {
+    ProductModel
       .findById(request.params.id)
       .then(data => response.json(data))
 
@@ -35,4 +36,32 @@ let controller = {
 };
 
 
-export default controller
+export const userController = {
+  create(request, response) {
+    UserModel
+      .create(request.body)
+      .then(data => response.json(data))
+  },
+
+  //define delete route
+  delete(request, response) {
+    UserModel
+      .deleteOne(request.params.id)
+  },
+
+  update(request, response) {
+    UserModel
+      .findOneAndUpdate(request.params.id, request.body)
+      .then(data => response.json(data))
+
+  },
+
+  getUserById(request, response) {
+    UserModel
+      .findById(request.params.id)
+      .then(data => response.json(data))
+
+  }
+};
+
+

@@ -2,7 +2,7 @@
 import mongoose from 'mongoose';
 
 // Create our "schema" for our Product model
-let productSchema = new mongoose.Schema({
+let userSchema = new mongoose.Schema({
   // properties--
   name: String,
   image: String,
@@ -16,6 +16,6 @@ let productSchema = new mongoose.Schema({
   onSale: Boolean,
 })
 
-// Create our product model
 
-export default mongoose.model("Products", productSchema);
+// Create our product model
+export default mongoose.model("Users", userSchema);

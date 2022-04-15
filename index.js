@@ -1,6 +1,8 @@
-import router from "./routes/router";
 import db from './connection/connection.js';
+import chalk from 'chalk';
 import app from './server/App.js';
+
+const PORT = process.env.PORT || 8080;
 
 
 db.on("connected", () => {
