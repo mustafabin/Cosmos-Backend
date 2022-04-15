@@ -7,6 +7,7 @@ let mongooseConfig = {
   useUnifiedTopology: true
 }
 
+
 mongoose.connect("mongodb://127.0.0.1:27017/Cosmos", mongooseConfig)
 
 const db = mongoose.connection;
