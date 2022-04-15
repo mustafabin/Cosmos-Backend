@@ -1,5 +1,4 @@
-import model from ('../models/productModel.js');
-import express from ('express');
+import model from '../models/productModel.js';
 
 
 let controller = {

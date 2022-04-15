@@ -1,12 +1,22 @@
 import mongoose from "mongoose";
+import chalk from "chalk";
+
 
 let mongooseConfig = {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }
 
+mongoose.connect("mongodb://127.0.0.1:27017/Cosmos", mongooseConfig)
 
+const db = mongoose.connection;
 
-mongoose.connect("mongodb://127.0.0.1:27017/authors", mongooseConfig)
+db.on("error", (error) => {
+  console.error(chalk.red(error))
+});
 
-export default mongoose;
+db.once("disconnected", () => {
+  console.log(chalk.green("Disconnected from MongoDB"));
+});
+
+export default db;

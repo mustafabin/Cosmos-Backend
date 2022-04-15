@@ -1,5 +1,5 @@
 // Import Mongoose
-import mongoose from '../connection/connection.js';
+import mongoose from 'mongoose';
 
 // Create our "schema" for our Product model
 let productSchema = new mongoose.Schema({
@@ -15,6 +15,5 @@ let productSchema = new mongoose.Schema({
 })
 
 // Create our product model
-let Product = mongoose.model("Product", productSchema)
 
-export default Product;
+export default mongoose.model("Products", productSchema);
