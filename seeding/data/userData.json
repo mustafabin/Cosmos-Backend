@@ -1,0 +1,10 @@
+{
+  "name": "Willard Filmore",
+  "image": "dusty",
+  "category": "fictional",
+  "warrenty": false,
+  "price": 100000,
+  "description": "this is a person",
+  "galaxy": "most likely",
+  "onSale": true
+}
