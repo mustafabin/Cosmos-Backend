@@ -1,5 +1,5 @@
 import express from "express";
-import { userController } from "../controllers/userController";
+import { userController } from "../controllers/userController.js";
 
 const userRouter = new express.Router();
 
@@ -8,6 +8,6 @@ const userRouter = new express.Router();
 userRouter.post("/", userController.create);
 userRouter.get("/getById/:id", userController.getUserById);
 userRouter.delete("/:id", userController.delete);
-userRouter.put("/updateById/:id", userController.update);
+userRouter.put("/:id", userController.update);
 
 export default userRouter;
