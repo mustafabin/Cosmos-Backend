@@ -20,6 +20,3 @@ db.on("connected", () => {
 db.on("error", (error) =>
   console.error("error connecting to the servor\n" + error)
 );
-db.on("listening", () =>
-  console.log("yeah we really connected this time\n" + process.env.PORT)
-);
