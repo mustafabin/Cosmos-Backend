@@ -7,8 +7,8 @@ const PORT = process.env.PORT || 8080;
 
 db.on("connected", () => {
   console.clear();
-  console.log("connecting to MongoDB!");
-  app.listen(process.env.PORT, () => {
+  console.log("connecting to MongoDB!" + process.env.PORT);
+  app.listen(PORT, () => {
     process.env.NODE_ENV === "production"
       ? console.log(`Express server running in production on port ${PORT}\n\n`)
       : console.log(
