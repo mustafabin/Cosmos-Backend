@@ -26,7 +26,7 @@ export const userController = {
 
     //hash user password using bcrypt salt method because it hashes the password mutiple times and is recommended
     //the hashing takes some time so we need to await it
-    const salt = await bcrypt.genSalt(10);
+    const salt = await bcrypt.genSalt(1);
     const hashedPassword = await bcrypt.hash(password, salt);
 
     //after checks passed and password hashed create user
