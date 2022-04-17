@@ -1,12 +1,13 @@
 import express from "express";
 import { userController } from "../controllers/userController.js";
-
+import protect from "../middleware/authMiddleware.js";
 const userRouter = new express.Router();
 
 //user routes
 
-userRouter.post("/", userController.create);
-userRouter.get("/getById/:id", userController.getUserById);
+userRouter.post("/register", userController.create);
+userRouter.get("/login", userController.login);
+userRouter.get("/me", protect, userController.getMe);
 userRouter.delete("/:id", userController.delete);
 userRouter.put("/:id", userController.update);
 

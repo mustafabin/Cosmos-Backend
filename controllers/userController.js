@@ -1,8 +1,16 @@
 import UserModel from "../models/userModel.js";
 //import for user login and register
-import jwt from "jsonwebtoken";
+import Jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
+//load in our env variables
+import env from "dotenv";
+env.config();
 
+let generateToken = async (id) => {
+  return await Jwt.sign({ id: id }, process.env.JWT_SECRET, {
+    expiresIn: "30d",
+  });
+};
 export const userController = {
   async create(req, res) {
     const { name, email, password } = req.body;
@@ -33,7 +41,7 @@ export const userController = {
         _id: user.id,
         name: user.name,
         email: user.email,
-        password: user.password,
+        token: await generateToken(user.id),
       });
     } else {
       return res.status(400).json("Invaild user data");
@@ -66,18 +74,34 @@ export const userController = {
       res.status(500).json({ error: error });
     }
   },
-
-  async getUserById(req, res) {
+  //login returns the user data
+  async login(req, res) {
+    const { email, password } = req.body;
     try {
-      let found = await UserModel.findById(req.params.id);
-      if (!found) {
+      let user = await UserModel.findOne({ email: email });
+      if (user && (await bcrypt.compare(password, user.password))) {
+        return res.json({
+          _id: user.id,
+          name: user.name,
+          email: user.email,
+          token: await generateToken(user.id),
+        });
+      } else {
         return res.status(404).json({
-          message: "That ID is not in the database",
+          message: "Invaild Credentials",
         });
       }
-      res.json(found);
     } catch (error) {
-      res.status(500).json({ error: error });
+      return res.status(500).json({ error: error });
+    }
+  },
+  //this get me is like a get by id expect the middleware (auth) does the finding
+  async getMe(req, res) {
+    try {
+      //the reason we have access to req.user is b/c it was defined in the authMiddle.js file
+      return res.json(req.user);
+    } catch (err) {
+      return res.status(500).json({ message: err });
     }
   },
 };
