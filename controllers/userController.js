@@ -87,7 +87,7 @@ export const userController = {
           token: await generateToken(user.id),
         });
       } else {
-        return res.status(404).json({
+        return res.status(401).json({
           message: "Invaild Credentials",
         });
       }
