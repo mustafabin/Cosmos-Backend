@@ -65,7 +65,7 @@ export const userController = {
 
   async update(req, res) {
     try {
-      const { id } = req.params;
+      const { id } = req.user.id;
       const updatedUser = await UserModel.findByIdAndUpdate(id, req.body, {
         returnOriginal: false,
       });

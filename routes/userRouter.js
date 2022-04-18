@@ -9,6 +9,6 @@ userRouter.post("/register", userController.create);
 userRouter.post("/login", userController.login);
 userRouter.post("/me", protect, userController.getMe);
 userRouter.delete("/:id", userController.delete);
-userRouter.put("/:id", userController.update);
+userRouter.put("/", protect, userController.update);
 
 export default userRouter;
