@@ -1,7 +1,7 @@
 [
   {
     "name": "Earth",
-    "image": "https://i.imgur.com/a3d7G4K.png",
+    "image": "https://i.imgur.com/EWEs9uW.png",
     "category": "real",
     "warrenty": false,
     "price": 2,
@@ -9,7 +9,8 @@
     "galaxy": "kag system",
     "onSale": true,
     "rating": 0.5,
-    "inventory": 2
+    "inventory": 2,
+    "quantity": 0
   },
   {
     "name": "Vormir",
@@ -21,7 +22,8 @@
     "galaxy": "kag system",
     "onSale": true,
     "rating": 4.5,
-    "inventory": 1
+    "inventory": 1,
+    "quantity": 0
   },
   {
     "name": "Nidavalir",
@@ -33,7 +35,8 @@
     "galaxy": "kag system",
     "onSale": true,
     "rating": 5,
-    "inventory": 1
+    "inventory": 1,
+    "quantity": 0
   },
   {
     "name": "Asgard",
@@ -45,7 +48,8 @@
     "galaxy": "kag system",
     "onSale": true,
     "rating": 1.5,
-    "inventory": 2
+    "inventory": 2,
+    "quantity": 0
   },
   {
     "name": "Sakaar",
@@ -57,7 +61,8 @@
     "galaxy": "kag system",
     "onSale": true,
     "rating": 4.5,
-    "inventory": 1
+    "inventory": 1,
+    "quantity": 0
   },
   {
     "name": "Nowhere",
@@ -69,7 +74,8 @@
     "galaxy": "kag system",
     "onSale": true,
     "rating": 3.5,
-    "inventory": 1
+    "inventory": 1,
+    "quantity": 0
   },
   {
     "name": "Xandar",
@@ -81,7 +87,8 @@
     "galaxy": "kag system",
     "onSale": true,
     "rating": 5,
-    "inventory": 3
+    "inventory": 3,
+    "quantity": 0
   },
   {
     "name": "Ego",
@@ -93,7 +100,8 @@
     "galaxy": "kag system",
     "onSale": true,
     "rating": 3.5,
-    "inventory": 1
+    "inventory": 1,
+    "quantity": 0
   },
   {
     "name": "Ligma",
@@ -105,6 +113,7 @@
     "galaxy": "kag system",
     "onSale": true,
     "rating": 2.5,
-    "inventory": 1
+    "inventory": 1,
+    "quantity": 0
   }
 ]
