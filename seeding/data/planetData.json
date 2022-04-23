@@ -1,10 +1,110 @@
-{
-  "name": "Vormir",
-  "image": "",
-  "category": "fictional",
-  "warrenty": false,
-  "price": 100000,
-  "description": "this is a planet",
-  "galaxy": "kag system",
-  "onSale": true
-}
+[
+  {
+    "name": "Earth",
+    "image": "https://i.imgur.com/a3d7G4K.png",
+    "category": "real",
+    "warrenty": false,
+    "price": 2,
+    "description": "Earth was once a giant supercomputer designed to find the Ultimate Question of Life, the Universe and Everything. It is commonly mistaken for a planet, especially by the ape-like creatures who live on it.",
+    "galaxy": "kag system",
+    "onSale": true,
+    "rating": 0.5,
+    "inventory": 2
+  },
+  {
+    "name": "Vormir",
+    "image": "https://i.imgur.com/VYA90B8.png",
+    "category": "fictional",
+    "warrenty": false,
+    "price": 121340,
+    "description": "Vormir --or as its known more colloquially, planet party-time-- is a celestial body made almost entirely comprised of beer. It's seas a dark lager, its lakes fine IPAs. Clouds have been observed to be soft foam, while every solid substance found on the planet somehow relates to hops.",
+    "galaxy": "kag system",
+    "onSale": true,
+    "rating": 4.5,
+    "inventory": 1
+  },
+  {
+    "name": "Nidavalir",
+    "image": "https://i.imgur.com/D3Igo9Z.png",
+    "category": "fictional",
+    "warrenty": false,
+    "price": 283450,
+    "description": "First conquered by Arteo the Great in year 26602 standard, Nidavalir's entire non-oceanic surface is almost completed covered in 'Arties Deli's' -- the galaxies premiere Italian bodega, featuring nothing Italian. While the planet has and can sustain liquid water, it has no bevs.",
+    "galaxy": "kag system",
+    "onSale": true,
+    "rating": 5,
+    "inventory": 1
+  },
+  {
+    "name": "Asgard",
+    "image": "https://i.imgur.com/L0yxMFR.png",
+    "category": "fictional",
+    "warrenty": false,
+    "price": 234579,
+    "description": "'This is a scam', declared Asgard's first democratically elected leader, Nhe Nonerable Nasim (whom was a fan of alliteration). He then proceeded to promptly abscond from the planet, his dereliction of duty leaving the planet in relative confusion. Soon after it was realized that due to the dense exo-sphere and hearty carbon oxygen balance of the planets atmosphere, Asgard rains diamonds. ",
+    "galaxy": "kag system",
+    "onSale": true,
+    "rating": 1.5,
+    "inventory": 2
+  },
+  {
+    "name": "Sakaar",
+    "image": "https://i.imgur.com/0bjoUv4.png",
+    "category": "fictional",
+    "warrenty": false,
+    "price": 100000,
+    "description": "Honestly, like, this planets pretty much perfect, innit. There was once this bloke, ye? Raul, ye, He got 'imself some superpowers and was like 'fuggit' and just went postal on all the fat-cats and shithead politicians and just *thrrrppp* yaached em, yea? Sent em to the big merrygo, right? The ol' farm way up north, ye and now, like, honestly m8 its a dream, like... no more wars, no hunger, no famine... they'll off ya for using vim but like its a decent trade honest. 9.5 ou'a 10",
+    "galaxy": "kag system",
+    "onSale": true,
+    "rating": 4.5,
+    "inventory": 1
+  },
+  {
+    "name": "Nowhere",
+    "image": "https://i.imgur.com/BEpsAlq.png",
+    "category": "fictional",
+    "warrenty": false,
+    "price": 849457,
+    "description": "The only known record of civilization left from nowhere is an account of history written almost entirely by a dog. It was titled Courage the Cowardly Dog Show, starring Courage, the Cowardly Dog! Abandoned as a pup, he was found by Muriel, who lives in the middle of nowhere with her husband, Eustace Bagge. But creeeeepy stuff happens on Nowhere. It's up to Courage to save his new home! As expected it is mostly illegible.",
+    "galaxy": "kag system",
+    "onSale": true,
+    "rating": 3.5,
+    "inventory": 1
+  },
+  {
+    "name": "Xandar",
+    "image": "https://i.imgur.com/LwPDBPE.png",
+    "category": "fictional",
+    "warrenty": true,
+    "price": 859367,
+    "description": "This planet is ruled by the Honorable King Mustafa, whom emerged victorious against James the Conquerer in the great Sakaarian magic wars",
+    "galaxy": "kag system",
+    "onSale": true,
+    "rating": 5,
+    "inventory": 3
+  },
+  {
+    "name": "Ego",
+    "image": "https://i.imgur.com/3OJ3Ii8.png",
+    "category": "living",
+    "warrenty": false,
+    "price": 888660,
+    "description": "The only notably feature of this planet is a single sign on the north-most poll. It reads 'Art was here first', and has remained untouched seemingly since the spawn of the galaxy. A thermal scan reveals this planet is, like, teeth-to-lungs stuffed with big 'ol bitcoins baby",
+    "galaxy": "kag system",
+    "onSale": true,
+    "rating": 3.5,
+    "inventory": 1
+  },
+  {
+    "name": "Ligma",
+    "image": "https://i.imgur.com/nX9IosN.png",
+    "category": "fictional",
+    "warrenty": true,
+    "price": 8008135,
+    "description": "'ligma globesszz' said the first conquerer of the subsequently dubbed 'ligma' before he was summarily executed for being 'that guy'. In his place, a wise philosopher Kaylitus Dubsicus rose to fame on the planet, soothing the population left directionless with is famous treatise 'it is what it is'",
+    "galaxy": "kag system",
+    "onSale": true,
+    "rating": 2.5,
+    "inventory": 1
+  }
+]

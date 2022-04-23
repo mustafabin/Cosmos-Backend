@@ -1,20 +1,20 @@
 import mongoose from "mongoose";
 import chalk from "chalk";
 
-
 let mongooseConfig = {
   useNewUrlParser: true,
-  useUnifiedTopology: true
-}
+  useUnifiedTopology: true,
+};
 
-let connectionString = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/Cosmos";
+let connectionString =
+  process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/Cosmos";
 
-mongoose.connect(connectionString, mongooseConfig)
+mongoose.connect(connectionString, mongooseConfig);
 
 const db = mongoose.connection;
 
 db.on("error", (error) => {
-  console.error(chalk.red(error))
+  console.error(chalk.red(error));
 });
 
 db.once("disconnected", () => {
