@@ -1,5 +1,5 @@
 // Import Mongoose
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 // Create our "schema" for our Product model
 let productSchema = new mongoose.Schema({
@@ -14,7 +14,8 @@ let productSchema = new mongoose.Schema({
   galaxy: String,
   relation: [String],
   onSale: Boolean,
-})
+  quantity: Number,
+});
 
 // Create our product model
 
