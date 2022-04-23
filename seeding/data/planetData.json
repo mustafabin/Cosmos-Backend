@@ -10,7 +10,7 @@
     "onSale": true,
     "rating": 0.5,
     "inventory": 2,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "name": "Vormir",
@@ -23,7 +23,7 @@
     "onSale": true,
     "rating": 4.5,
     "inventory": 1,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "name": "Nidavalir",
@@ -36,7 +36,7 @@
     "onSale": true,
     "rating": 5,
     "inventory": 1,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "name": "Asgard",
@@ -49,7 +49,7 @@
     "onSale": true,
     "rating": 1.5,
     "inventory": 2,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "name": "Sakaar",
@@ -62,7 +62,7 @@
     "onSale": true,
     "rating": 4.5,
     "inventory": 1,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "name": "Nowhere",
@@ -75,7 +75,7 @@
     "onSale": true,
     "rating": 3.5,
     "inventory": 1,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "name": "Xandar",
@@ -88,7 +88,7 @@
     "onSale": true,
     "rating": 5,
     "inventory": 3,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "name": "Ego",
@@ -101,7 +101,7 @@
     "onSale": true,
     "rating": 3.5,
     "inventory": 1,
-    "quantity": 0
+    "quantity": 1
   },
   {
     "name": "Ligma",
@@ -114,6 +114,6 @@
     "onSale": true,
     "rating": 2.5,
     "inventory": 1,
-    "quantity": 0
+    "quantity": 1
   }
 ]
